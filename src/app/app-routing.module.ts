@@ -16,6 +16,10 @@ export const rootRoutes: Route[] = [
             {
                 path: 'auth',
                 loadChildren: () => import('@core/auth/auth.module').then((m) => m.AuthModule)
+            },
+            {
+                path: 'about',
+                loadChildren: () => import('@features/about/about.module').then((m) => m.AboutModule)
             }
         ]
     },
